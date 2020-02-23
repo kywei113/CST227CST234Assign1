@@ -1,0 +1,6 @@
+﻿  program.c
+D:\kywGitRepos\CST227CST234Assign1\CST227CST234Assign1\program.c(48,43): warning C4047:  'function': 'char *' differs in levels of indirection from 'char (*)[17]'
+D:\kywGitRepos\CST227CST234Assign1\CST227CST234Assign1\program.c(48,43): warning C4024:  'TestSaveData': different types for formal and actual parameter 3
+D:\kywGitRepos\CST227CST234Assign1\CST227CST234Assign1\program.c(86,43): warning C4047:  'function': 'char *' differs in levels of indirection from 'char (*)[17]'
+D:\kywGitRepos\CST227CST234Assign1\CST227CST234Assign1\program.c(86,43): warning C4024:  'TestReadData': different types for formal and actual parameter 3
+  CST227CST234Assign1.vcxproj -> D:\kywGitRepos\CST227CST234Assign1\Debug\CST227CST234Assign1.exe
