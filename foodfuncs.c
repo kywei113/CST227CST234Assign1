@@ -8,7 +8,7 @@
 			Kyle Wei		- CST 234
 
 	File Name: foodfuncs.c
-	Date: Feb 23, 2020
+	Date: Feb 24, 2020
 */
 
 /*

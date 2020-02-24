@@ -1,6 +1,9 @@
 ﻿  program.c
-D:\kywGitRepos\CST227CST234Assign1\CST227CST234Assign1\program.c(48,43): warning C4047:  'function': 'char *' differs in levels of indirection from 'char (*)[17]'
-D:\kywGitRepos\CST227CST234Assign1\CST227CST234Assign1\program.c(48,43): warning C4024:  'TestSaveData': different types for formal and actual parameter 3
-D:\kywGitRepos\CST227CST234Assign1\CST227CST234Assign1\program.c(86,43): warning C4047:  'function': 'char *' differs in levels of indirection from 'char (*)[17]'
-D:\kywGitRepos\CST227CST234Assign1\CST227CST234Assign1\program.c(86,43): warning C4024:  'TestReadData': different types for formal and actual parameter 3
+D:\kywGitRepos\CST227CST234Assign1\program.c(39,40): warning C4047:  '=': 'int' differs in levels of indirection from 'int *'
+D:\kywGitRepos\CST227CST234Assign1\program.c(51,43): warning C4047:  'function': 'char *' differs in levels of indirection from 'char (*)[17]'
+D:\kywGitRepos\CST227CST234Assign1\program.c(51,43): warning C4024:  'TestSaveData': different types for formal and actual parameter 3
+D:\kywGitRepos\CST227CST234Assign1\program.c(96,24): warning C4047:  'function': 'unsigned int *' differs in levels of indirection from 'int **'
+D:\kywGitRepos\CST227CST234Assign1\program.c(96,24): warning C4024:  'TestReadData': different types for formal and actual parameter 1
+D:\kywGitRepos\CST227CST234Assign1\program.c(96,42): warning C4047:  'function': 'char *' differs in levels of indirection from 'char (*)[17]'
+D:\kywGitRepos\CST227CST234Assign1\program.c(96,42): warning C4024:  'TestReadData': different types for formal and actual parameter 3
   CST227CST234Assign1.vcxproj -> D:\kywGitRepos\CST227CST234Assign1\Debug\CST227CST234Assign1.exe

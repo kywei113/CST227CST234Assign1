@@ -2,8 +2,14 @@
 #include <stdlib.h>
 #include "foodfuncs.h"
 
-//Author:
-//Date:
+/*
+	COSC 292 Assignment 1
+	Author: Michael Sabares - CST 227
+			Kyle Wei		- CST 234
+
+	File Name: program.c
+	Date: Feb 24, 2020
+*/
 
 void TestGetRecord(int index, unsigned int* iFoodArrayPtr)
 {
@@ -24,18 +30,13 @@ void TestFindRecord(unsigned int* iFoodArrayPtr, int iSize)
 
 void TestSaveData(unsigned int* iFoodArrayPtr, int iSize, char* fileName)
 {
-
 	SaveData(iFoodArrayPtr, iSize, fileName);
-
 }
 
 void TestReadData(unsigned int* iFoodArrayPtr, int iSize, char* fileName)
 {
-	PrintData(iFoodArrayPtr, iSize);
-
-	iFoodArrayPtr = ReadData(fileName, &iSize);
-
-	PrintData(iFoodArrayPtr, iSize);
+	int** iPtrPtr = &iFoodArrayPtr;
+	**iPtrPtr = ReadData(fileName, &iSize);
 }
 
 void main(void)
@@ -84,8 +85,17 @@ void main(void)
 	TestFindRecord(iFoodArray, iSize);
 
 	//Reading in Food Data from a file
+	//Using the iFoodPtr to pass the address of array into ReadData, and using indirection to move where the pointer points to
+	//Changes which array the iFoodPtr points to from within the TestReadData function
+	//Alternatively, could have just returned an int* from TestReadData and assigned it to iFoodPtr
 	printf("\nRead Record\n");
-	TestReadData(iFoodArray, iSize, &fileName);
+	int* iFoodPtr = iFoodArray;
+	printf("\nBefore Read Record\n");
+	PrintData(iFoodPtr, iSize);
+
+	TestReadData(&iFoodPtr, iSize, &fileName);
+	printf("\nAfter Read Record\n");
+	PrintData(iFoodPtr, iSize);
 }
 
 
